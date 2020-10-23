@@ -1,0 +1,7 @@
+POST http://192.168.1.16:8080/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "email":"dungdm6191@gmail.com",
+    "password":"dung123"
+}
