@@ -14,12 +14,12 @@ app.config["SECRET_KEY"] = "X8slQiQWkvC0Zytlrntx9NQB009oOOg5r5kiah68NkckksDyuguw
 app.config["JWT_TOKEN_LOCATION"] = ["cookies"]
 jwt = JWTManager(app)
 
-api_uri = "http://167.99.133.206:8080/auth"
+api_uri = "http://167.99.133.206:5000/auth"
 
 @app.route('/index')
 @app.route('/')
 def index():
-    return "index site"
+    return "index site Do Manh Dung"
 
 
 @app.route('/login', methods=["POST","GET"])
@@ -37,25 +37,9 @@ def login():
         }
 
         response = requests.post(url=url_login, json=login_dict, headers=headers)
-        return response.text
         if response.status_code == 201:
             return jsonify(response.cookies.items())
-            
-            cookies = response.cookies
-            ex_cookies = cookiejar.CookieJar(cookies)
-            # ex_cookies.add_cookie_header(response)
-            return jsonify(response.cookies.items())
             return "dang nhap thanh cong"
-        # response_cont = json.loads(response.text)
-        
-
-        # if response_cont["status"] != 201:
-        #     return redirect(url_for('login'))
-        # else:
-        #     res = make_response(jsonify({"msg":"dang nhap thanh cong"}))
-        #     # session["access_token"] = response_cont["access_token"]
-        #     # session["refresh_token"] = response_cont["refresh_token"]
-        #     return res
     return render_template('login.html')
 
 @app.route('/signup/', methods=["POST","GET"])
