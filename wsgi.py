@@ -1,3 +1,4 @@
+import http
 from flask import Flask, redirect, render_template, url_for, request, make_response, jsonify, session
 from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity, get_raw_jwt
 from flask_jwt_extended.utils import decode_token
@@ -6,7 +7,7 @@ from flask_session import Session
 import requests
 import json
 from helper import epoch_utc_to_datetime
-from http import cookiejar
+from http import cookiejar, cookies
 
 app = Flask(__name__)
 app.config["ENVIRONMENT"] = "development"
@@ -14,12 +15,13 @@ app.config["SECRET_KEY"] = "X8slQiQWkvC0Zytlrntx9NQB009oOOg5r5kiah68NkckksDyuguw
 app.config["JWT_TOKEN_LOCATION"] = ["cookies"]
 jwt = JWTManager(app)
 
-api_uri = "http://167.99.133.206:8080/auth"
+api_uri = "http://10.18.0.24:8080/auth"
 
 @app.route('/index')
 @app.route('/')
 def index():
-    return "index site"
+    response = requests.get(url=api_uri)
+    return response.text
 
 
 @app.route('/login', methods=["POST","GET"])
@@ -35,17 +37,11 @@ def login():
         headers = {
             "dataType":"application/json"
         }
-
-        response = requests.post(url=url_login, json=login_dict, headers=headers)
-        return response.text
+        session = requests.Session()
+        response = session.get(url=url_login, json=login_dict, headers=headers)
         if response.status_code == 201:
-            return jsonify(response.cookies.items())
             
-            cookies = response.cookies
-            ex_cookies = cookiejar.CookieJar(cookies)
-            # ex_cookies.add_cookie_header(response)
-            return jsonify(response.cookies.items())
-            return "dang nhap thanh cong"
+            return str(response.headers)
         # response_cont = json.loads(response.text)
         
 
@@ -146,9 +142,11 @@ def view(arg):
 
 @app.route("/users")
 def users():
+    session = requests.Session()
+    return str(session.cookies.items())
     users_uri = api_uri + "/users"
     response = requests.get(url=users_uri)
     return response.text
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='localhost', port=5000)
