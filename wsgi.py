@@ -15,7 +15,7 @@ app.config["SECRET_KEY"] = "X8slQiQWkvC0Zytlrntx9NQB009oOOg5r5kiah68NkckksDyuguw
 app.config["JWT_TOKEN_LOCATION"] = ["cookies"]
 jwt = JWTManager(app)
 
-api_uri = "http://10.18.0.24:8080/auth"
+api_uri = "http://192.168.1.16/auth_token"
 
 @app.route('/index')
 @app.route('/')
@@ -38,7 +38,7 @@ def login():
             "dataType":"application/json"
         }
         session = requests.Session()
-        response = session.get(url=url_login, json=login_dict, headers=headers)
+        response = session.post(url=url_login, json=login_dict, headers=headers)
         if response.status_code == 201:
             
             return str(response.headers)
@@ -149,4 +149,4 @@ def users():
     return response.text
 
 if __name__ == '__main__':
-    app.run(debug=True, host='localhost', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000)
