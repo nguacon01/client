@@ -14,5 +14,4 @@ COPY . .
 #port of container by default
 EXPOSE 5000
 
-# #run app in container
-CMD [ "python","wsgi.py" ]
+ENTRYPOINT ["sh", "entrypoint.sh"]
