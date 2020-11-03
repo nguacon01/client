@@ -14,4 +14,6 @@ COPY . .
 #port of container by default
 EXPOSE 5000
 
+# The code to run when container is started:
+# COPY run.py .
 ENTRYPOINT ["sh", "entrypoint.sh"]

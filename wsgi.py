@@ -17,12 +17,20 @@ app.config["SECRET_KEY"] = "X8slQiQWkvC0Zytlrntx9NQB009oOOg5r5kiah68NkckksDyuguw
 app.config["JWT_TOKEN_LOCATION"] = ["cookies"]
 jwt = JWTManager(app)
 
+<<<<<<< HEAD
 api_uri = "http://10.18.0.24:8080/auth"
+=======
+api_uri = "http://167.99.133.206:5000/auth"
+>>>>>>> 5a9d0ed5ad16d69832f6e49c00afb8044897c18b
 
 @app.route('/index')
 @app.route('/')
 def index():
+<<<<<<< HEAD
     return "client site run on docker"
+=======
+    return "index site Do Manh Dung"
+>>>>>>> 5a9d0ed5ad16d69832f6e49c00afb8044897c18b
 
 
 @app.route('/login', methods=["POST","GET"])
@@ -40,6 +48,7 @@ def login():
         }
         response = requests.post(url=url_login, json=login_dict, headers=headers)
         if response.status_code == 201:
+<<<<<<< HEAD
             res_content = json.loads(response.content)
             session["access_token"] = res_content["access_token"]
             session["refresh_token"] = res_content["refresh_token"]
@@ -50,6 +59,11 @@ def login():
         else:
             return render_template("login.html")
     return render_template("login.html")
+=======
+            return jsonify(response.cookies.items())
+            return "dang nhap thanh cong"
+    return render_template('login.html')
+>>>>>>> 5a9d0ed5ad16d69832f6e49c00afb8044897c18b
 
 @app.route('/signup/', methods=["POST","GET"])
 def signup():
