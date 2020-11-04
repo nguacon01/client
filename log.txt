@@ -12642,3 +12642,3324 @@ AttributeError: 'functools.partial' object has no attribute '__name__'
 [2020-11-03 08:13:47 +0000] [9] [INFO] Booting worker with pid: 9
 [2020-11-03 08:13:47 +0000] [10] [INFO] Booting worker with pid: 10
 [2020-11-03 08:13:47 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 08:14:43 +0000] [7] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:14:43 +0000] [9] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:14:43 +0000] [8] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:14:43 +0000] [10] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:14:43 +0000] [10] [INFO] Worker exiting (pid: 10)
+[2020-11-03 08:14:43 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 08:14:43 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:14:43 +0000] [9] [INFO] Worker exiting (pid: 9)
+[2020-11-03 08:14:43 +0000] [15] [INFO] Booting worker with pid: 15
+[2020-11-03 08:14:43 +0000] [1] [DEBUG] 3 workers
+[2020-11-03 08:14:43 +0000] [16] [INFO] Booting worker with pid: 16
+[2020-11-03 08:14:44 +0000] [1] [DEBUG] 2 workers
+[2020-11-03 08:14:44 +0000] [17] [INFO] Booting worker with pid: 17
+[2020-11-03 08:14:43 +0000] [15] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:14:44 +0000] [16] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:14:44 +0000] [17] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:14:44 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:14:44 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2020-11-03 08:14:44 +0000] [16] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:14:44 +0000] [17] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:14:44 +0000] [16] [INFO] Worker exiting (pid: 16)
+[2020-11-03 08:14:44 +0000] [17] [INFO] Worker exiting (pid: 17)
+[2020-11-03 08:14:44 +0000] [18] [INFO] Booting worker with pid: 18
+[2020-11-03 08:14:44 +0000] [18] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:14:44 +0000] [18] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:14:44 +0000] [18] [INFO] Worker exiting (pid: 18)
+[2020-11-03 08:14:44 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 08:17:48 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fd1c27d55e0>
+  on_reload: <function OnReload.on_reload at 0x7fd1c27d5700>
+  when_ready: <function WhenReady.when_ready at 0x7fd1c27d5820>
+  pre_fork: <function Prefork.pre_fork at 0x7fd1c27d5940>
+  post_fork: <function Postfork.post_fork at 0x7fd1c27d5a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fd1c27d5b80>
+  worker_int: <function WorkerInt.worker_int at 0x7fd1c27d5ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fd1c27d5dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7fd1c27d5ee0>
+  pre_request: <function PreRequest.pre_request at 0x7fd1c2769040>
+  post_request: <function PostRequest.post_request at 0x7fd1c27690d0>
+  child_exit: <function ChildExit.child_exit at 0x7fd1c27691f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fd1c2769310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fd1c2769430>
+  on_exit: <function OnExit.on_exit at 0x7fd1c2769550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:17:48 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:17:48 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:17:48 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:17:48 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:17:48 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 08:17:48 +0000] [7] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:17:48 +0000] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:17:48 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:17:48 +0000] [1] [INFO] Shutting down: Master
+[2020-11-03 08:17:48 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-11-03 08:18:49 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fd79bdf45e0>
+  on_reload: <function OnReload.on_reload at 0x7fd79bdf4700>
+  when_ready: <function WhenReady.when_ready at 0x7fd79bdf4820>
+  pre_fork: <function Prefork.pre_fork at 0x7fd79bdf4940>
+  post_fork: <function Postfork.post_fork at 0x7fd79bdf4a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fd79bdf4b80>
+  worker_int: <function WorkerInt.worker_int at 0x7fd79bdf4ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fd79bdf4dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7fd79bdf4ee0>
+  pre_request: <function PreRequest.pre_request at 0x7fd79bd88040>
+  post_request: <function PostRequest.post_request at 0x7fd79bd880d0>
+  child_exit: <function ChildExit.child_exit at 0x7fd79bd881f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fd79bd88310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fd79bd88430>
+  on_exit: <function OnExit.on_exit at 0x7fd79bd88550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:18:49 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:18:49 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:18:49 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:18:49 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:18:49 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 08:18:49 +0000] [7] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:18:49 +0000] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:18:49 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:18:49 +0000] [1] [INFO] Shutting down: Master
+[2020-11-03 08:18:49 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-11-03 08:19:51 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc8a2fdb5e0>
+  on_reload: <function OnReload.on_reload at 0x7fc8a2fdb700>
+  when_ready: <function WhenReady.when_ready at 0x7fc8a2fdb820>
+  pre_fork: <function Prefork.pre_fork at 0x7fc8a2fdb940>
+  post_fork: <function Postfork.post_fork at 0x7fc8a2fdba60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc8a2fdbb80>
+  worker_int: <function WorkerInt.worker_int at 0x7fc8a2fdbca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc8a2fdbdc0>
+  pre_exec: <function PreExec.pre_exec at 0x7fc8a2fdbee0>
+  pre_request: <function PreRequest.pre_request at 0x7fc8a2f6f040>
+  post_request: <function PostRequest.post_request at 0x7fc8a2f6f0d0>
+  child_exit: <function ChildExit.child_exit at 0x7fc8a2f6f1f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc8a2f6f310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc8a2f6f430>
+  on_exit: <function OnExit.on_exit at 0x7fc8a2f6f550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:19:51 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:19:51 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:19:51 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:19:51 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:19:51 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 08:19:51 +0000] [7] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:19:51 +0000] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:19:51 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:19:51 +0000] [1] [INFO] Shutting down: Master
+[2020-11-03 08:19:51 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-11-03 08:20:53 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f0e209195e0>
+  on_reload: <function OnReload.on_reload at 0x7f0e20919700>
+  when_ready: <function WhenReady.when_ready at 0x7f0e20919820>
+  pre_fork: <function Prefork.pre_fork at 0x7f0e20919940>
+  post_fork: <function Postfork.post_fork at 0x7f0e20919a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f0e20919b80>
+  worker_int: <function WorkerInt.worker_int at 0x7f0e20919ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f0e20919dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f0e20919ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f0e208ad040>
+  post_request: <function PostRequest.post_request at 0x7f0e208ad0d0>
+  child_exit: <function ChildExit.child_exit at 0x7f0e208ad1f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f0e208ad310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f0e208ad430>
+  on_exit: <function OnExit.on_exit at 0x7f0e208ad550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:20:53 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:20:53 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:20:53 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:20:53 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:20:53 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 08:20:53 +0000] [7] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:20:53 +0000] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:20:53 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:20:53 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 08:20:53 +0000] [8] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:20:53 +0000] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:20:53 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 08:20:53 +0000] [1] [INFO] Shutting down: Master
+[2020-11-03 08:20:53 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-11-03 08:21:56 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc01e4755e0>
+  on_reload: <function OnReload.on_reload at 0x7fc01e475700>
+  when_ready: <function WhenReady.when_ready at 0x7fc01e475820>
+  pre_fork: <function Prefork.pre_fork at 0x7fc01e475940>
+  post_fork: <function Postfork.post_fork at 0x7fc01e475a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc01e475b80>
+  worker_int: <function WorkerInt.worker_int at 0x7fc01e475ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc01e475dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7fc01e475ee0>
+  pre_request: <function PreRequest.pre_request at 0x7fc01e409040>
+  post_request: <function PostRequest.post_request at 0x7fc01e4090d0>
+  child_exit: <function ChildExit.child_exit at 0x7fc01e4091f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc01e409310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc01e409430>
+  on_exit: <function OnExit.on_exit at 0x7fc01e409550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:21:56 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:21:56 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:21:56 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:21:56 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:21:56 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 08:21:56 +0000] [8] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:21:56 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-11-03 08:21:56 +0000] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:21:56 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 08:21:56 +0000] [9] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:21:56 +0000] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:21:56 +0000] [9] [INFO] Worker exiting (pid: 9)
+[2020-11-03 08:21:56 +0000] [10] [INFO] Booting worker with pid: 10
+[2020-11-03 08:21:56 +0000] [10] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:21:56 +0000] [10] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:21:56 +0000] [10] [INFO] Worker exiting (pid: 10)
+[2020-11-03 08:21:56 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 08:21:56 +0000] [7] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:21:56 +0000] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:21:56 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:22:58 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f972fe775e0>
+  on_reload: <function OnReload.on_reload at 0x7f972fe77700>
+  when_ready: <function WhenReady.when_ready at 0x7f972fe77820>
+  pre_fork: <function Prefork.pre_fork at 0x7f972fe77940>
+  post_fork: <function Postfork.post_fork at 0x7f972fe77a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f972fe77b80>
+  worker_int: <function WorkerInt.worker_int at 0x7f972fe77ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f972fe77dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f972fe77ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f972fe0b040>
+  post_request: <function PostRequest.post_request at 0x7f972fe0b0d0>
+  child_exit: <function ChildExit.child_exit at 0x7f972fe0b1f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f972fe0b310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f972fe0b430>
+  on_exit: <function OnExit.on_exit at 0x7f972fe0b550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:22:58 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:22:58 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:22:58 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:22:58 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:22:58 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 08:22:58 +0000] [7] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:22:58 +0000] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:22:58 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:22:58 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 08:22:58 +0000] [8] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:22:58 +0000] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:22:58 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 08:22:58 +0000] [1] [INFO] Shutting down: Master
+[2020-11-03 08:22:58 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-11-03 08:24:00 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fd3993145e0>
+  on_reload: <function OnReload.on_reload at 0x7fd399314700>
+  when_ready: <function WhenReady.when_ready at 0x7fd399314820>
+  pre_fork: <function Prefork.pre_fork at 0x7fd399314940>
+  post_fork: <function Postfork.post_fork at 0x7fd399314a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fd399314b80>
+  worker_int: <function WorkerInt.worker_int at 0x7fd399314ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fd399314dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7fd399314ee0>
+  pre_request: <function PreRequest.pre_request at 0x7fd3992a8040>
+  post_request: <function PostRequest.post_request at 0x7fd3992a80d0>
+  child_exit: <function ChildExit.child_exit at 0x7fd3992a81f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fd3992a8310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fd3992a8430>
+  on_exit: <function OnExit.on_exit at 0x7fd3992a8550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:24:00 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:24:00 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:24:00 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:24:00 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:24:00 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 08:24:00 +0000] [7] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:24:00 +0000] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:24:00 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:24:00 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 08:24:00 +0000] [8] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:24:00 +0000] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:24:00 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 08:24:00 +0000] [1] [INFO] Shutting down: Master
+[2020-11-03 08:24:00 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-11-03 08:25:01 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7faed3a2b5e0>
+  on_reload: <function OnReload.on_reload at 0x7faed3a2b700>
+  when_ready: <function WhenReady.when_ready at 0x7faed3a2b820>
+  pre_fork: <function Prefork.pre_fork at 0x7faed3a2b940>
+  post_fork: <function Postfork.post_fork at 0x7faed3a2ba60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7faed3a2bb80>
+  worker_int: <function WorkerInt.worker_int at 0x7faed3a2bca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7faed3a2bdc0>
+  pre_exec: <function PreExec.pre_exec at 0x7faed3a2bee0>
+  pre_request: <function PreRequest.pre_request at 0x7faed39bf040>
+  post_request: <function PostRequest.post_request at 0x7faed39bf0d0>
+  child_exit: <function ChildExit.child_exit at 0x7faed39bf1f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7faed39bf310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7faed39bf430>
+  on_exit: <function OnExit.on_exit at 0x7faed39bf550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:25:01 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:25:01 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:25:01 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:25:01 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:25:01 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 08:25:01 +0000] [7] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:25:01 +0000] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:25:01 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:25:01 +0000] [1] [INFO] Shutting down: Master
+[2020-11-03 08:25:01 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-11-03 08:26:03 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fb2eabe85e0>
+  on_reload: <function OnReload.on_reload at 0x7fb2eabe8700>
+  when_ready: <function WhenReady.when_ready at 0x7fb2eabe8820>
+  pre_fork: <function Prefork.pre_fork at 0x7fb2eabe8940>
+  post_fork: <function Postfork.post_fork at 0x7fb2eabe8a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fb2eabe8b80>
+  worker_int: <function WorkerInt.worker_int at 0x7fb2eabe8ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fb2eabe8dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7fb2eabe8ee0>
+  pre_request: <function PreRequest.pre_request at 0x7fb2eab7c040>
+  post_request: <function PostRequest.post_request at 0x7fb2eab7c0d0>
+  child_exit: <function ChildExit.child_exit at 0x7fb2eab7c1f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fb2eab7c310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fb2eab7c430>
+  on_exit: <function OnExit.on_exit at 0x7fb2eab7c550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:26:03 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:26:03 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:26:03 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:26:03 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:26:03 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 08:26:03 +0000] [8] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:26:03 +0000] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:26:03 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 08:26:03 +0000] [1] [INFO] Shutting down: Master
+[2020-11-03 08:26:03 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-11-03 08:27:05 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f82fbf6f5e0>
+  on_reload: <function OnReload.on_reload at 0x7f82fbf6f700>
+  when_ready: <function WhenReady.when_ready at 0x7f82fbf6f820>
+  pre_fork: <function Prefork.pre_fork at 0x7f82fbf6f940>
+  post_fork: <function Postfork.post_fork at 0x7f82fbf6fa60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f82fbf6fb80>
+  worker_int: <function WorkerInt.worker_int at 0x7f82fbf6fca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f82fbf6fdc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f82fbf6fee0>
+  pre_request: <function PreRequest.pre_request at 0x7f82fbf03040>
+  post_request: <function PostRequest.post_request at 0x7f82fbf030d0>
+  child_exit: <function ChildExit.child_exit at 0x7f82fbf031f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f82fbf03310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f82fbf03430>
+  on_exit: <function OnExit.on_exit at 0x7f82fbf03550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:27:05 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:27:05 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:27:05 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:27:05 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:27:05 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 08:27:05 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-11-03 08:27:05 +0000] [8] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:27:05 +0000] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:27:05 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 08:27:05 +0000] [9] [ERROR] invalid syntax (wsgi.py, line 20)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+[2020-11-03 08:27:05 +0000] [9] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 20
+    <<<<<<< HEAD
+    ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:27:05 +0000] [9] [INFO] Worker exiting (pid: 9)
+[2020-11-03 08:28:06 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc9b6af05e0>
+  on_reload: <function OnReload.on_reload at 0x7fc9b6af0700>
+  when_ready: <function WhenReady.when_ready at 0x7fc9b6af0820>
+  pre_fork: <function Prefork.pre_fork at 0x7fc9b6af0940>
+  post_fork: <function Postfork.post_fork at 0x7fc9b6af0a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc9b6af0b80>
+  worker_int: <function WorkerInt.worker_int at 0x7fc9b6af0ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc9b6af0dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7fc9b6af0ee0>
+  pre_request: <function PreRequest.pre_request at 0x7fc9b6a83040>
+  post_request: <function PostRequest.post_request at 0x7fc9b6a830d0>
+  child_exit: <function ChildExit.child_exit at 0x7fc9b6a831f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc9b6a83310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc9b6a83430>
+  on_exit: <function OnExit.on_exit at 0x7fc9b6a83550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:28:06 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:28:06 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:28:06 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:28:06 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:28:06 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 08:28:06 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 08:28:06 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-11-03 08:28:06 +0000] [10] [INFO] Booting worker with pid: 10
+[2020-11-03 08:28:06 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 08:28:10 +0000] [7] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:28:10 +0000] [8] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:28:10 +0000] [9] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:28:10 +0000] [10] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:28:11 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:28:11 +0000] [15] [INFO] Booting worker with pid: 15
+[2020-11-03 08:28:11 +0000] [15] [ERROR] unexpected indent (wsgi.py, line 54)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 54
+    password = request.form.get("password", None)
+    ^
+IndentationError: unexpected indent
+[2020-11-03 08:28:11 +0000] [15] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 54
+    password = request.form.get("password", None)
+    ^
+IndentationError: unexpected indent
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:28:11 +0000] [15] [INFO] Worker exiting (pid: 15)
+[2020-11-03 08:28:11 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 08:28:11 +0000] [9] [INFO] Worker exiting (pid: 9)
+[2020-11-03 08:28:11 +0000] [10] [INFO] Worker exiting (pid: 10)
+[2020-11-03 08:28:11 +0000] [1] [INFO] Shutting down: Master
+[2020-11-03 08:28:11 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-11-03 08:29:13 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fda13dff5e0>
+  on_reload: <function OnReload.on_reload at 0x7fda13dff700>
+  when_ready: <function WhenReady.when_ready at 0x7fda13dff820>
+  pre_fork: <function Prefork.pre_fork at 0x7fda13dff940>
+  post_fork: <function Postfork.post_fork at 0x7fda13dffa60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fda13dffb80>
+  worker_int: <function WorkerInt.worker_int at 0x7fda13dffca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fda13dffdc0>
+  pre_exec: <function PreExec.pre_exec at 0x7fda13dffee0>
+  pre_request: <function PreRequest.pre_request at 0x7fda13d93040>
+  post_request: <function PostRequest.post_request at 0x7fda13d930d0>
+  child_exit: <function ChildExit.child_exit at 0x7fda13d931f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fda13d93310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fda13d93430>
+  on_exit: <function OnExit.on_exit at 0x7fda13d93550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:29:13 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:29:13 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:29:13 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:29:13 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:29:13 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 08:29:13 +0000] [7] [ERROR] unexpected indent (wsgi.py, line 54)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 54
+    password = request.form.get("password", None)
+    ^
+IndentationError: unexpected indent
+[2020-11-03 08:29:13 +0000] [7] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 54
+    password = request.form.get("password", None)
+    ^
+IndentationError: unexpected indent
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:29:13 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 08:29:13 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 08:29:13 +0000] [8] [ERROR] unexpected indent (wsgi.py, line 54)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 54
+    password = request.form.get("password", None)
+    ^
+IndentationError: unexpected indent
+[2020-11-03 08:29:13 +0000] [8] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/client/wsgi.py", line 54
+    password = request.form.get("password", None)
+    ^
+IndentationError: unexpected indent
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/gthread.py", line 92, in init_process
+    super().init_process()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-11-03 08:29:13 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 08:29:13 +0000] [1] [INFO] Shutting down: Master
+[2020-11-03 08:29:13 +0000] [1] [INFO] Reason: Worker failed to boot.
+[2020-11-03 08:30:15 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f155b6985e0>
+  on_reload: <function OnReload.on_reload at 0x7f155b698700>
+  when_ready: <function WhenReady.when_ready at 0x7f155b698820>
+  pre_fork: <function Prefork.pre_fork at 0x7f155b698940>
+  post_fork: <function Postfork.post_fork at 0x7f155b698a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f155b698b80>
+  worker_int: <function WorkerInt.worker_int at 0x7f155b698ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f155b698dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f155b698ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f155b62c040>
+  post_request: <function PostRequest.post_request at 0x7f155b62c0d0>
+  child_exit: <function ChildExit.child_exit at 0x7f155b62c1f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f155b62c310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f155b62c430>
+  on_exit: <function OnExit.on_exit at 0x7f155b62c550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:30:15 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:30:15 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:30:15 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:30:15 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:30:15 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 08:30:15 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-11-03 08:30:15 +0000] [10] [INFO] Booting worker with pid: 10
+[2020-11-03 08:30:16 +0000] [13] [INFO] Booting worker with pid: 13
+[2020-11-03 08:30:16 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 08:37:44 +0000] [9] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:37:44 +0000] [13] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:37:45 +0000] [9] [INFO] Worker exiting (pid: 9)
+[2020-11-03 08:37:45 +0000] [16] [INFO] Booting worker with pid: 16
+[2020-11-03 08:37:45 +0000] [13] [INFO] Worker exiting (pid: 13)
+[2020-11-03 08:37:45 +0000] [18] [INFO] Booting worker with pid: 18
+[2020-11-03 08:37:45 +0000] [8] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:37:45 +0000] [10] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:37:46 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 08:37:46 +0000] [10] [INFO] Worker exiting (pid: 10)
+[2020-11-03 08:37:46 +0000] [20] [INFO] Booting worker with pid: 20
+[2020-11-03 08:37:46 +0000] [21] [INFO] Booting worker with pid: 21
+[2020-11-03 08:57:45 +0000] [21] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:57:45 +0000] [18] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:57:45 +0000] [21] [INFO] Worker exiting (pid: 21)
+[2020-11-03 08:57:45 +0000] [24] [INFO] Booting worker with pid: 24
+[2020-11-03 08:57:45 +0000] [16] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:57:45 +0000] [20] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:57:45 +0000] [18] [INFO] Worker exiting (pid: 18)
+[2020-11-03 08:57:45 +0000] [26] [INFO] Booting worker with pid: 26
+[2020-11-03 08:57:45 +0000] [20] [INFO] Worker exiting (pid: 20)
+[2020-11-03 08:57:45 +0000] [27] [INFO] Booting worker with pid: 27
+[2020-11-03 08:57:46 +0000] [16] [INFO] Worker exiting (pid: 16)
+[2020-11-03 08:57:46 +0000] [30] [INFO] Booting worker with pid: 30
+[2020-11-03 08:57:57 +0000] [30] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:57:57 +0000] [24] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:57:57 +0000] [26] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:57:58 +0000] [27] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:57:58 +0000] [30] [INFO] Worker exiting (pid: 30)
+[2020-11-03 08:57:58 +0000] [24] [INFO] Worker exiting (pid: 24)
+[2020-11-03 08:57:58 +0000] [32] [INFO] Booting worker with pid: 32
+[2020-11-03 08:57:58 +0000] [1] [DEBUG] 3 workers
+[2020-11-03 08:57:58 +0000] [33] [INFO] Booting worker with pid: 33
+[2020-11-03 08:57:58 +0000] [26] [INFO] Worker exiting (pid: 26)
+[2020-11-03 08:57:58 +0000] [35] [INFO] Booting worker with pid: 35
+[2020-11-03 08:57:58 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 08:57:58 +0000] [27] [INFO] Worker exiting (pid: 27)
+[2020-11-03 08:57:59 +0000] [37] [INFO] Booting worker with pid: 37
+[2020-11-03 08:58:00 +0000] [32] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:58:01 +0000] [33] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:58:01 +0000] [35] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:58:01 +0000] [37] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 08:58:01 +0000] [32] [INFO] Worker exiting (pid: 32)
+[2020-11-03 08:58:01 +0000] [40] [INFO] Booting worker with pid: 40
+[2020-11-03 08:58:02 +0000] [33] [INFO] Worker exiting (pid: 33)
+[2020-11-03 08:58:02 +0000] [41] [INFO] Booting worker with pid: 41
+[2020-11-03 08:58:02 +0000] [35] [INFO] Worker exiting (pid: 35)
+[2020-11-03 08:58:02 +0000] [43] [INFO] Booting worker with pid: 43
+[2020-11-03 08:58:02 +0000] [37] [INFO] Worker exiting (pid: 37)
+[2020-11-03 08:58:02 +0000] [45] [INFO] Booting worker with pid: 45
+[2020-11-03 08:59:47 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['unix:client.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 7
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f98d66be5e0>
+  on_reload: <function OnReload.on_reload at 0x7f98d66be700>
+  when_ready: <function WhenReady.when_ready at 0x7f98d66be820>
+  pre_fork: <function Prefork.pre_fork at 0x7f98d66be940>
+  post_fork: <function Postfork.post_fork at 0x7f98d66bea60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f98d66beb80>
+  worker_int: <function WorkerInt.worker_int at 0x7f98d66beca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f98d66bedc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f98d66beee0>
+  pre_request: <function PreRequest.pre_request at 0x7f98d6652040>
+  post_request: <function PostRequest.post_request at 0x7f98d66520d0>
+  child_exit: <function ChildExit.child_exit at 0x7f98d66521f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f98d6652310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f98d6652430>
+  on_exit: <function OnExit.on_exit at 0x7f98d6652550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 08:59:47 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 08:59:47 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 08:59:47 +0000] [1] [INFO] Listening at: unix:client.sock (1)
+[2020-11-03 08:59:47 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 08:59:47 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 08:59:47 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-11-03 08:59:47 +0000] [10] [INFO] Booting worker with pid: 10
+[2020-11-03 08:59:47 +0000] [11] [INFO] Booting worker with pid: 11
+[2020-11-03 08:59:47 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 09:03:32 +0000] [10] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 09:03:32 +0000] [9] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 09:03:32 +0000] [8] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 09:03:32 +0000] [11] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 09:03:32 +0000] [10] [INFO] Worker exiting (pid: 10)
+[2020-11-03 09:03:32 +0000] [11] [INFO] Worker exiting (pid: 11)
+[2020-11-03 09:03:32 +0000] [9] [INFO] Worker exiting (pid: 9)
+[2020-11-03 09:03:32 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 09:03:32 +0000] [16] [INFO] Booting worker with pid: 16
+[2020-11-03 09:03:32 +0000] [1] [DEBUG] 1 workers
+[2020-11-03 09:03:32 +0000] [17] [INFO] Booting worker with pid: 17
+[2020-11-03 09:03:32 +0000] [18] [INFO] Booting worker with pid: 18
+[2020-11-03 09:03:32 +0000] [20] [INFO] Booting worker with pid: 20
+[2020-11-03 09:03:32 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 09:03:53 +0000] [18] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 09:03:53 +0000] [20] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 09:03:53 +0000] [16] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 09:03:54 +0000] [17] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 09:03:54 +0000] [18] [INFO] Worker exiting (pid: 18)
+[2020-11-03 09:03:54 +0000] [20] [INFO] Worker exiting (pid: 20)
+[2020-11-03 09:03:54 +0000] [24] [INFO] Booting worker with pid: 24
+[2020-11-03 09:03:54 +0000] [1] [DEBUG] 3 workers
+[2020-11-03 09:03:54 +0000] [25] [INFO] Booting worker with pid: 25
+[2020-11-03 09:03:54 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 09:03:54 +0000] [16] [INFO] Worker exiting (pid: 16)
+[2020-11-03 09:03:54 +0000] [28] [INFO] Booting worker with pid: 28
+[2020-11-03 09:03:54 +0000] [17] [INFO] Worker exiting (pid: 17)
+[2020-11-03 09:03:55 +0000] [29] [INFO] Booting worker with pid: 29
+[2020-11-03 09:15:01 +0000] [1] [DEBUG] Current configuration:
+  config: gunicorn_config.py
+  bind: ['0.0.0.0:5000']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 4
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 120
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /client
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc7079645e0>
+  on_reload: <function OnReload.on_reload at 0x7fc707964700>
+  when_ready: <function WhenReady.when_ready at 0x7fc707964820>
+  pre_fork: <function Prefork.pre_fork at 0x7fc707964940>
+  post_fork: <function Postfork.post_fork at 0x7fc707964a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc707964b80>
+  worker_int: <function WorkerInt.worker_int at 0x7fc707964ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc707964dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7fc707964ee0>
+  pre_request: <function PreRequest.pre_request at 0x7fc7078f8040>
+  post_request: <function PostRequest.post_request at 0x7fc7078f80d0>
+  child_exit: <function ChildExit.child_exit at 0x7fc7078f81f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc7078f8310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc7078f8430>
+  on_exit: <function OnExit.on_exit at 0x7fc7078f8550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-11-03 09:15:01 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[2020-11-03 09:15:01 +0000] [1] [DEBUG] Arbiter booted
+[2020-11-03 09:15:01 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2020-11-03 09:15:01 +0000] [1] [INFO] Using worker: threads
+[2020-11-03 09:15:01 +0000] [7] [INFO] Booting worker with pid: 7
+[2020-11-03 09:15:01 +0000] [8] [INFO] Booting worker with pid: 8
+[2020-11-03 09:15:01 +0000] [9] [INFO] Booting worker with pid: 9
+[2020-11-03 09:15:01 +0000] [10] [INFO] Booting worker with pid: 10
+[2020-11-03 09:15:01 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 09:15:14 +0000] [10] [DEBUG] GET /
+[2020-11-03 09:15:14 +0000] [10] [DEBUG] Closing connection.
+[2020-11-03 09:15:14 +0000] [10] [DEBUG] GET /favicon.ico
+[2020-11-03 09:15:14 +0000] [10] [DEBUG] Closing connection.
+[2020-11-03 10:27:16 +0000] [7] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:27:16 +0000] [9] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:27:16 +0000] [10] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:27:16 +0000] [8] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:27:16 +0000] [10] [INFO] Worker exiting (pid: 10)
+[2020-11-03 10:27:16 +0000] [7] [INFO] Worker exiting (pid: 7)
+[2020-11-03 10:27:16 +0000] [16] [INFO] Booting worker with pid: 16
+[2020-11-03 10:27:16 +0000] [17] [INFO] Booting worker with pid: 17
+[2020-11-03 10:27:17 +0000] [8] [INFO] Worker exiting (pid: 8)
+[2020-11-03 10:27:17 +0000] [9] [INFO] Worker exiting (pid: 9)
+[2020-11-03 10:27:17 +0000] [20] [INFO] Booting worker with pid: 20
+[2020-11-03 10:27:17 +0000] [21] [INFO] Booting worker with pid: 21
+[2020-11-03 10:28:29 +0000] [17] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:28:29 +0000] [20] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:28:29 +0000] [21] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:28:30 +0000] [17] [INFO] Worker exiting (pid: 17)
+[2020-11-03 10:28:30 +0000] [24] [INFO] Booting worker with pid: 24
+[2020-11-03 10:28:30 +0000] [16] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:28:30 +0000] [20] [INFO] Worker exiting (pid: 20)
+[2020-11-03 10:28:30 +0000] [21] [INFO] Worker exiting (pid: 21)
+[2020-11-03 10:28:30 +0000] [26] [INFO] Booting worker with pid: 26
+[2020-11-03 10:28:30 +0000] [27] [INFO] Booting worker with pid: 27
+[2020-11-03 10:28:31 +0000] [16] [INFO] Worker exiting (pid: 16)
+[2020-11-03 10:28:31 +0000] [30] [INFO] Booting worker with pid: 30
+[2020-11-03 10:28:51 +0000] [30] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:28:51 +0000] [24] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:28:51 +0000] [27] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:28:51 +0000] [26] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:28:52 +0000] [30] [INFO] Worker exiting (pid: 30)
+[2020-11-03 10:28:52 +0000] [32] [INFO] Booting worker with pid: 32
+[2020-11-03 10:28:52 +0000] [24] [INFO] Worker exiting (pid: 24)
+[2020-11-03 10:28:52 +0000] [33] [INFO] Booting worker with pid: 33
+[2020-11-03 10:28:52 +0000] [26] [INFO] Worker exiting (pid: 26)
+[2020-11-03 10:28:52 +0000] [27] [INFO] Worker exiting (pid: 27)
+[2020-11-03 10:28:52 +0000] [36] [INFO] Booting worker with pid: 36
+[2020-11-03 10:28:52 +0000] [1] [DEBUG] 3 workers
+[2020-11-03 10:28:52 +0000] [37] [INFO] Booting worker with pid: 37
+[2020-11-03 10:28:53 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 10:28:59 +0000] [32] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:28:59 +0000] [33] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:29:00 +0000] [36] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:29:00 +0000] [37] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:29:00 +0000] [32] [INFO] Worker exiting (pid: 32)
+[2020-11-03 10:29:00 +0000] [33] [INFO] Worker exiting (pid: 33)
+[2020-11-03 10:29:00 +0000] [40] [INFO] Booting worker with pid: 40
+[2020-11-03 10:29:00 +0000] [41] [INFO] Booting worker with pid: 41
+[2020-11-03 10:29:01 +0000] [36] [INFO] Worker exiting (pid: 36)
+[2020-11-03 10:29:01 +0000] [44] [INFO] Booting worker with pid: 44
+[2020-11-03 10:29:01 +0000] [37] [INFO] Worker exiting (pid: 37)
+[2020-11-03 10:29:01 +0000] [1] [DEBUG] 3 workers
+[2020-11-03 10:29:01 +0000] [45] [INFO] Booting worker with pid: 45
+[2020-11-03 10:29:01 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 10:29:13 +0000] [44] [DEBUG] GET /
+[2020-11-03 10:29:13 +0000] [44] [DEBUG] Closing connection.
+[2020-11-03 10:29:18 +0000] [41] [DEBUG] GET /login
+[2020-11-03 10:29:18 +0000] [41] [DEBUG] Closing connection.
+[2020-11-03 10:29:25 +0000] [44] [DEBUG] POST /login
+[2020-11-03 10:29:25,539] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/client/wsgi.py", line 38, in login
+    response = requests.Session.post(url=url_login, json=login_dict, headers=headers)
+TypeError: post() missing 1 required positional argument: 'self'
+[2020-11-03 10:29:25 +0000] [44] [DEBUG] Closing connection.
+[2020-11-03 10:30:51 +0000] [41] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:30:51 +0000] [40] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:30:51 +0000] [40] [INFO] Worker exiting (pid: 40)
+[2020-11-03 10:30:51 +0000] [50] [INFO] Booting worker with pid: 50
+[2020-11-03 10:30:51 +0000] [44] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:30:51 +0000] [45] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:30:52 +0000] [41] [INFO] Worker exiting (pid: 41)
+[2020-11-03 10:30:52 +0000] [52] [INFO] Booting worker with pid: 52
+[2020-11-03 10:30:52 +0000] [44] [INFO] Worker exiting (pid: 44)
+[2020-11-03 10:30:52 +0000] [54] [INFO] Booting worker with pid: 54
+[2020-11-03 10:30:52 +0000] [45] [INFO] Worker exiting (pid: 45)
+[2020-11-03 10:30:52 +0000] [55] [INFO] Booting worker with pid: 55
+[2020-11-03 10:30:58 +0000] [52] [DEBUG] GET /login
+[2020-11-03 10:30:58 +0000] [52] [DEBUG] Closing connection.
+[2020-11-03 10:31:02 +0000] [50] [DEBUG] POST /login
+[2020-11-03 10:31:02,684] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/client/wsgi.py", line 38, in login
+    response = requests.Session.post(url=url_login, json=login_dict, headers=headers)
+TypeError: post() missing 1 required positional argument: 'self'
+[2020-11-03 10:31:02 +0000] [50] [DEBUG] Closing connection.
+[2020-11-03 10:31:27 +0000] [55] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:27 +0000] [52] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:27 +0000] [52] [INFO] Worker exiting (pid: 52)
+[2020-11-03 10:31:27 +0000] [60] [INFO] Booting worker with pid: 60
+[2020-11-03 10:31:28 +0000] [55] [INFO] Worker exiting (pid: 55)
+[2020-11-03 10:31:28 +0000] [62] [INFO] Booting worker with pid: 62
+[2020-11-03 10:31:28 +0000] [54] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:28 +0000] [50] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:28 +0000] [50] [INFO] Worker exiting (pid: 50)
+[2020-11-03 10:31:28 +0000] [54] [INFO] Worker exiting (pid: 54)
+[2020-11-03 10:31:28 +0000] [64] [INFO] Booting worker with pid: 64
+[2020-11-03 10:31:28 +0000] [1] [DEBUG] 3 workers
+[2020-11-03 10:31:28 +0000] [65] [INFO] Booting worker with pid: 65
+[2020-11-03 10:31:28 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 10:31:30 +0000] [65] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:30 +0000] [62] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:30 +0000] [64] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:30 +0000] [60] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:31 +0000] [65] [INFO] Worker exiting (pid: 65)
+[2020-11-03 10:31:31 +0000] [68] [INFO] Booting worker with pid: 68
+[2020-11-03 10:31:31 +0000] [62] [INFO] Worker exiting (pid: 62)
+[2020-11-03 10:31:31 +0000] [70] [INFO] Booting worker with pid: 70
+[2020-11-03 10:31:31 +0000] [60] [INFO] Worker exiting (pid: 60)
+[2020-11-03 10:31:31 +0000] [64] [INFO] Worker exiting (pid: 64)
+[2020-11-03 10:31:31 +0000] [72] [INFO] Booting worker with pid: 72
+[2020-11-03 10:31:32 +0000] [1] [DEBUG] 3 workers
+[2020-11-03 10:31:32 +0000] [73] [INFO] Booting worker with pid: 73
+[2020-11-03 10:31:32 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 10:31:40 +0000] [72] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:40 +0000] [73] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:40 +0000] [68] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:40 +0000] [70] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:31:41 +0000] [72] [INFO] Worker exiting (pid: 72)
+[2020-11-03 10:31:41 +0000] [73] [INFO] Worker exiting (pid: 73)
+[2020-11-03 10:31:41 +0000] [76] [INFO] Booting worker with pid: 76
+[2020-11-03 10:31:41 +0000] [68] [INFO] Worker exiting (pid: 68)
+[2020-11-03 10:31:41 +0000] [1] [DEBUG] 3 workers
+[2020-11-03 10:31:41 +0000] [77] [INFO] Booting worker with pid: 77
+[2020-11-03 10:31:41 +0000] [78] [INFO] Booting worker with pid: 78
+[2020-11-03 10:31:41 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 10:31:41 +0000] [70] [INFO] Worker exiting (pid: 70)
+[2020-11-03 10:31:41 +0000] [82] [INFO] Booting worker with pid: 82
+[2020-11-03 10:31:44 +0000] [78] [DEBUG] GET /login
+[2020-11-03 10:31:44 +0000] [78] [DEBUG] Closing connection.
+[2020-11-03 10:31:48 +0000] [76] [DEBUG] POST /login
+[2020-11-03 10:31:48,859] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/client/wsgi.py", line 47, in login
+    requests.Session().cookies.set(cookies)
+TypeError: set() missing 1 required positional argument: 'value'
+[2020-11-03 10:31:48 +0000] [76] [DEBUG] Closing connection.
+[2020-11-03 10:32:26 +0000] [76] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:32:26 +0000] [77] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:32:26 +0000] [78] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:32:26 +0000] [78] [INFO] Worker exiting (pid: 78)
+[2020-11-03 10:32:26 +0000] [86] [INFO] Booting worker with pid: 86
+[2020-11-03 10:32:27 +0000] [82] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:32:27 +0000] [76] [INFO] Worker exiting (pid: 76)
+[2020-11-03 10:32:27 +0000] [77] [INFO] Worker exiting (pid: 77)
+[2020-11-03 10:32:27 +0000] [88] [INFO] Booting worker with pid: 88
+[2020-11-03 10:32:27 +0000] [1] [DEBUG] 3 workers
+[2020-11-03 10:32:27 +0000] [89] [INFO] Booting worker with pid: 89
+[2020-11-03 10:32:27 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 10:32:27 +0000] [82] [INFO] Worker exiting (pid: 82)
+[2020-11-03 10:32:27 +0000] [92] [INFO] Booting worker with pid: 92
+[2020-11-03 10:32:31 +0000] [92] [DEBUG] GET /login
+[2020-11-03 10:32:31 +0000] [92] [DEBUG] Closing connection.
+[2020-11-03 10:32:35 +0000] [92] [DEBUG] POST /login
+[2020-11-03 10:32:36,334] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/client/wsgi.py", line 47, in login
+    requests.Session().cookies.set(**cookies)
+TypeError: set() missing 2 required positional arguments: 'name' and 'value'
+[2020-11-03 10:32:36 +0000] [92] [DEBUG] Closing connection.
+[2020-11-03 10:33:09 +0000] [88] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:33:10 +0000] [89] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:33:10 +0000] [88] [INFO] Worker exiting (pid: 88)
+[2020-11-03 10:33:10 +0000] [95] [INFO] Booting worker with pid: 95
+[2020-11-03 10:33:10 +0000] [86] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:33:10 +0000] [92] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:33:10 +0000] [89] [INFO] Worker exiting (pid: 89)
+[2020-11-03 10:33:10 +0000] [97] [INFO] Booting worker with pid: 97
+[2020-11-03 10:33:11 +0000] [86] [INFO] Worker exiting (pid: 86)
+[2020-11-03 10:33:11 +0000] [92] [INFO] Worker exiting (pid: 92)
+[2020-11-03 10:33:11 +0000] [99] [INFO] Booting worker with pid: 99
+[2020-11-03 10:33:11 +0000] [1] [DEBUG] 3 workers
+[2020-11-03 10:33:11 +0000] [100] [INFO] Booting worker with pid: 100
+[2020-11-03 10:33:11 +0000] [1] [DEBUG] 4 workers
+[2020-11-03 10:33:49 +0000] [100] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:33:50 +0000] [97] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:33:50 +0000] [95] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:33:50 +0000] [99] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:33:50 +0000] [100] [INFO] Worker exiting (pid: 100)
+[2020-11-03 10:33:50 +0000] [103] [INFO] Booting worker with pid: 103
+[2020-11-03 10:33:51 +0000] [97] [INFO] Worker exiting (pid: 97)
+[2020-11-03 10:33:51 +0000] [105] [INFO] Booting worker with pid: 105
+[2020-11-03 10:33:51 +0000] [99] [INFO] Worker exiting (pid: 99)
+[2020-11-03 10:33:51 +0000] [95] [INFO] Worker exiting (pid: 95)
+[2020-11-03 10:33:51 +0000] [107] [INFO] Booting worker with pid: 107
+[2020-11-03 10:33:51 +0000] [108] [INFO] Booting worker with pid: 108
+[2020-11-03 10:33:53 +0000] [103] [DEBUG] GET /login
+[2020-11-03 10:33:53 +0000] [103] [DEBUG] Closing connection.
+[2020-11-03 10:33:57 +0000] [103] [DEBUG] POST /login
+[2020-11-03 10:33:57 +0000] [103] [DEBUG] Closing connection.
+[2020-11-03 10:34:11 +0000] [103] [DEBUG] GET /
+[2020-11-03 10:34:11 +0000] [103] [DEBUG] Closing connection.
+[2020-11-03 10:36:53 +0000] [105] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:36:53 +0000] [107] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:36:53 +0000] [108] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:36:53 +0000] [103] [INFO] Worker reloading: /client/wsgi.py modified
+[2020-11-03 10:36:54 +0000] [105] [INFO] Worker exiting (pid: 105)
+[2020-11-03 10:36:54 +0000] [108] [INFO] Worker exiting (pid: 108)
+[2020-11-03 10:36:54 +0000] [103] [INFO] Worker exiting (pid: 103)
+[2020-11-03 10:36:54 +0000] [107] [INFO] Worker exiting (pid: 107)
+[2020-11-03 10:36:54 +0000] [112] [INFO] Booting worker with pid: 112
+[2020-11-03 10:36:54 +0000] [113] [INFO] Booting worker with pid: 113
+[2020-11-03 10:36:54 +0000] [1] [DEBUG] 2 workers
+[2020-11-03 10:36:54 +0000] [114] [INFO] Booting worker with pid: 114
+[2020-11-03 10:36:54 +0000] [115] [INFO] Booting worker with pid: 115
+[2020-11-03 10:36:54 +0000] [1] [DEBUG] 4 workers

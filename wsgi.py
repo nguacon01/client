@@ -1,4 +1,3 @@
-import http
 from flask import Flask, redirect, render_template, url_for, request, make_response, jsonify, session
 from flask import helpers
 from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity, get_raw_jwt
@@ -8,8 +7,6 @@ from flask_session import Session
 import requests
 import json
 from helpers import epoch_utc_to_datetime, decorator_is_exp_token
-import schedule
-import time
 
 app = Flask(__name__)
 app.config["FLASK_ENV"] = "development"
@@ -22,7 +19,7 @@ api_uri = "http://10.18.0.24:8080/auth"
 @app.route('/index')
 @app.route('/')
 def index():
-    return "client site run on docker"
+    return "client site run on docker and has been moved out web_form_2D"
 
 
 @app.route('/login', methods=["POST","GET"])
@@ -38,11 +35,15 @@ def login():
         headers = {
             "dataType":"application/json"
         }
-        response = requests.post(url=url_login, json=login_dict, headers=headers)
+        response = requests.Session().post(url=url_login, json=login_dict, headers=headers)
         if response.status_code == 201:
             res_content = json.loads(response.content)
             session["access_token"] = res_content["access_token"]
             session["refresh_token"] = res_content["refresh_token"]
+            cookies = {
+                "access_cookie":res_content["access_token"],
+                "refresh_cookie":res_content["refresh_token"]
+            }
             session["can_refresh"] = True
             decode_tk = decode_token(res_content["access_token"])
             during = epoch_utc_to_datetime(decode_tk["exp"]) - epoch_utc_to_datetime(decode_tk["iat"])
@@ -101,13 +102,6 @@ def logout():
         
 @app.route('/view/<string:arg>', methods=["POST", "GET"])
 def view(arg):
-    # if "access_token" not in session or not session["access_token"]:
-    #     return redirect(url_for('login'))
-    # headers = {
-    # "Authorization": "Bearer "+ session["access_token"]
-    # }
-
-    # return session["access_token"]
     protected_url = "http://192.168.1.16/{arg}/".format(arg=arg)
 
 
@@ -136,6 +130,7 @@ def users():
     users_uri = api_uri + "/users"
     response = requests.get(url=users_uri)
     return response.text
+    
 
 
 def silent_refresh(refresh_token, at_time):
