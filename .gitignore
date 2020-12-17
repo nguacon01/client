@@ -1,5 +1,14 @@
 *__pycache__*
+casc4de_site.fossil
+.fslckout
 *.pyc
-env/
-.vscode
-*.log
+/.fossil-settings
+.fslckout
+FTICR_DATA
+app/casc4de/static/.webassets-cache/
+.bashrc
+log.txt
+*/casc4de/static/gen/
+client_env/
+__pycache__/helper.cpython-38.pyc
+.vscode/
