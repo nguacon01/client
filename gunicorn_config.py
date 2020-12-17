@@ -13,8 +13,8 @@ timeout = 120
 #
 #       A string of "debug", "info", "warning", "error", "critical"
 #
-errorlog = 'log.txt'
-loglevel = 'debug'
-accesslog = '-'
+errorlog = 'gunicorn.err.log'
+loglevel = 'error'
+accesslog = 'gunicorn.acc.log'
 access_log_format = '%(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"'
 reload = True

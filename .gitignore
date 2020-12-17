@@ -2,4 +2,4 @@
 *.pyc
 env/
 .vscode
-log.txt
+*.log

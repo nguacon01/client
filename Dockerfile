@@ -4,6 +4,8 @@ FROM python:3
 #create work directoy which contains app
 WORKDIR /client
 
+RUN pip install --upgrade pip
+
 COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
